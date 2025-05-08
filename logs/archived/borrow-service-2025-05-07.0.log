@@ -1,0 +1,400 @@
+2025-05-07 23:23:37,103 INFO o.s.b.w.e.t.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-07 23:23:37,530 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-05-07 23:23:37,780 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07 23:23:37,927 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] BorrowServiceHikariPool - Shutdown initiated...
+2025-05-07 23:23:38,002 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] BorrowServiceHikariPool - Shutdown completed.
+2025-05-07 23:24:59,044 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.2.Final
+2025-05-07 23:24:59,167 INFO o.s.b.StartupInfoLogger [main] Starting BorrowServiceApplication using Java 17.0.4.1 with PID 11372 (C:\Users\PRAJAPATI\Downloads\borrow-service\borrow-service\target\classes started by PRAJAPATI in C:\Users\PRAJAPATI\Downloads\borrow-service\borrow-service)
+2025-05-07 23:24:59,169 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-07 23:24:59,171 INFO o.s.b.SpringApplication [main] The following 1 profile is active: "dev"
+2025-05-07 23:25:03,225 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07 23:25:03,398 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 150 ms. Found 4 JPA repository interfaces.
+2025-05-07 23:25:05,954 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8082 (http)
+2025-05-07 23:25:05,980 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2025-05-07 23:25:05,984 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-05-07 23:25:05,985 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07 23:25:06,196 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-05-07 23:25:06,215 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 6844 ms
+2025-05-07 23:25:06,750 DEBUG c.b.b.c.RestTemplateConfig [main] Creating RestTemplate for User Service with timeout: 5000ms
+2025-05-07 23:25:07,180 DEBUG o.s.w.f.GenericFilterBean [main] Filter 'jwtAuthenticationFilter' configured for use
+2025-05-07 23:25:07,710 INFO c.z.h.HikariDataSource [main] BorrowServiceHikariPool - Starting...
+2025-05-07 23:25:08,668 INFO c.z.h.p.HikariPool [main] BorrowServiceHikariPool - Added connection org.postgresql.jdbc.PgConnection@3ba8ef4e
+2025-05-07 23:25:08,672 INFO c.z.h.HikariDataSource [main] BorrowServiceHikariPool - Start completed.
+2025-05-07 23:25:08,741 INFO o.f.c.i.l.s.Slf4jLog [main] Database: jdbc:postgresql://localhost:5432/borrowdb (PostgreSQL 15.12)
+2025-05-07 23:25:09,204 INFO o.f.c.i.l.s.Slf4jLog [main] Successfully validated 2 migrations (execution time 00:00.298s)
+2025-05-07 23:25:09,398 INFO o.f.c.i.l.s.Slf4jLog [main] Current version of schema "public": 1
+2025-05-07 23:25:09,408 INFO o.f.c.i.l.s.Slf4jLog [main] Schema "public" is up to date. No migration necessary.
+2025-05-07 23:25:09,714 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07 23:25:09,808 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-07 23:25:09,857 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-05-07 23:25:10,555 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07 23:25:10,751 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-07 23:25:10,801 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (BorrowServiceHikariPool)']
+	Database driver: undefined/unknown
+	Database version: 15.12
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07 23:25:12,096 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07 23:25:13,315 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07 23:25:13,772 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-07 23:25:14,454 DEBUG c.b.b.c.RestTemplateConfig [main] Creating RestTemplate for Book Service with timeout: 5000ms
+2025-05-07 23:25:14,960 INFO o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-05-07 23:25:15,927 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 2 endpoints beneath base path '/actuator'
+2025-05-07 23:25:17,351 INFO o.a.k.c.c.AbstractConfig [main] AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:29092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = borrow-service-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2025-05-07 23:25:17,432 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka version: 3.8.1
+2025-05-07 23:25:17,432 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka commitId: 70d6ff42debf7e17
+2025-05-07 23:25:17,433 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka startTimeMs: 1746640517431
+2025-05-07 23:25:18,130 INFO o.a.k.c.u.AppInfoParser [kafka-admin-client-thread | borrow-service-admin-0] App info kafka.admin.client for borrow-service-admin-0 unregistered
+2025-05-07 23:25:18,136 INFO o.a.k.c.m.Metrics [kafka-admin-client-thread | borrow-service-admin-0] Metrics scheduler closed
+2025-05-07 23:25:18,136 INFO o.a.k.c.m.Metrics [kafka-admin-client-thread | borrow-service-admin-0] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-05-07 23:25:18,136 INFO o.a.k.c.m.Metrics [kafka-admin-client-thread | borrow-service-admin-0] Metrics reporters closed
+2025-05-07 23:25:18,199 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2025-05-07 23:25:18,215 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8082 (http) with context path '/api'
+2025-05-07 23:25:18,241 INFO o.s.b.StartupInfoLogger [main] Started BorrowServiceApplication in 20.533 seconds (process running for 23.713)
+2025-05-07 23:25:31,845 INFO o.a.j.l.DirectJDKLog [http-nio-8082-exec-7] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-07 23:25:31,846 INFO o.s.w.s.FrameworkServlet [http-nio-8082-exec-7] Initializing Servlet 'dispatcherServlet'
+2025-05-07 23:25:31,849 INFO o.s.w.s.FrameworkServlet [http-nio-8082-exec-7] Completed initialization in 3 ms
+2025-05-07 23:44:49,246 INFO o.s.b.w.e.t.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-07 23:44:49,711 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-05-07 23:44:50,013 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07 23:44:50,182 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] BorrowServiceHikariPool - Shutdown initiated...
+2025-05-07 23:44:50,224 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] BorrowServiceHikariPool - Shutdown completed.
+2025-05-07 23:45:00,628 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.2.Final
+2025-05-07 23:45:00,741 INFO o.s.b.StartupInfoLogger [main] Starting BorrowServiceApplication using Java 17.0.4.1 with PID 13348 (C:\Users\PRAJAPATI\Downloads\borrow-service\borrow-service\target\classes started by PRAJAPATI in C:\Users\PRAJAPATI\Downloads\borrow-service\borrow-service)
+2025-05-07 23:45:00,741 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-07 23:45:00,742 INFO o.s.b.SpringApplication [main] The following 1 profile is active: "dev"
+2025-05-07 23:45:03,032 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07 23:45:03,171 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 121 ms. Found 4 JPA repository interfaces.
+2025-05-07 23:45:05,364 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8082 (http)
+2025-05-07 23:45:05,400 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2025-05-07 23:45:05,406 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-05-07 23:45:05,407 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07 23:45:05,589 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-05-07 23:45:05,591 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 4684 ms
+2025-05-07 23:45:06,081 DEBUG c.b.b.c.RestTemplateConfig [main] Creating RestTemplate for User Service with timeout: 5000ms
+2025-05-07 23:45:06,627 DEBUG o.s.w.f.GenericFilterBean [main] Filter 'jwtAuthenticationFilter' configured for use
+2025-05-07 23:45:07,136 INFO c.z.h.HikariDataSource [main] BorrowServiceHikariPool - Starting...
+2025-05-07 23:45:07,527 INFO c.z.h.p.HikariPool [main] BorrowServiceHikariPool - Added connection org.postgresql.jdbc.PgConnection@39420d59
+2025-05-07 23:45:07,531 INFO c.z.h.HikariDataSource [main] BorrowServiceHikariPool - Start completed.
+2025-05-07 23:45:07,583 INFO o.f.c.i.l.s.Slf4jLog [main] Database: jdbc:postgresql://localhost:5432/borrowdb (PostgreSQL 15.12)
+2025-05-07 23:45:07,845 INFO o.f.c.i.l.s.Slf4jLog [main] Successfully validated 2 migrations (execution time 00:00.155s)
+2025-05-07 23:45:07,937 INFO o.f.c.i.l.s.Slf4jLog [main] Current version of schema "public": 1
+2025-05-07 23:45:07,950 INFO o.f.c.i.l.s.Slf4jLog [main] Schema "public" is up to date. No migration necessary.
+2025-05-07 23:45:08,156 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07 23:45:08,248 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-07 23:45:08,288 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-05-07 23:45:08,612 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07 23:45:08,712 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-07 23:45:08,737 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (BorrowServiceHikariPool)']
+	Database driver: undefined/unknown
+	Database version: 15.12
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07 23:45:10,114 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07 23:45:11,521 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07 23:45:12,373 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-07 23:45:13,355 DEBUG c.b.b.c.RestTemplateConfig [main] Creating RestTemplate for Book Service with timeout: 5000ms
+2025-05-07 23:45:13,865 INFO o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-05-07 23:45:14,933 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 2 endpoints beneath base path '/actuator'
+2025-05-07 23:45:16,486 INFO o.a.k.c.c.AbstractConfig [main] AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:29092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = borrow-service-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2025-05-07 23:45:16,619 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka version: 3.8.1
+2025-05-07 23:45:16,620 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka commitId: 70d6ff42debf7e17
+2025-05-07 23:45:16,620 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka startTimeMs: 1746641716617
+2025-05-07 23:45:17,682 INFO o.a.k.c.u.AppInfoParser [kafka-admin-client-thread | borrow-service-admin-0] App info kafka.admin.client for borrow-service-admin-0 unregistered
+2025-05-07 23:45:17,688 INFO o.a.k.c.m.Metrics [kafka-admin-client-thread | borrow-service-admin-0] Metrics scheduler closed
+2025-05-07 23:45:17,688 INFO o.a.k.c.m.Metrics [kafka-admin-client-thread | borrow-service-admin-0] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-05-07 23:45:17,688 INFO o.a.k.c.m.Metrics [kafka-admin-client-thread | borrow-service-admin-0] Metrics reporters closed
+2025-05-07 23:45:17,750 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2025-05-07 23:45:17,767 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8082 (http) with context path '/api'
+2025-05-07 23:45:17,798 INFO o.s.b.StartupInfoLogger [main] Started BorrowServiceApplication in 18.369 seconds (process running for 20.323)
+2025-05-07 23:45:18,998 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(1)-192.168.1.9] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-07 23:45:18,999 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(1)-192.168.1.9] Initializing Servlet 'dispatcherServlet'
+2025-05-07 23:45:19,002 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(1)-192.168.1.9] Completed initialization in 3 ms
+2025-05-07 23:51:23,345 INFO o.s.b.w.e.t.GracefulShutdown [SpringApplicationShutdownHook] Commencing graceful shutdown. Waiting for active requests to complete
+2025-05-07 23:51:23,640 INFO o.s.b.w.e.t.GracefulShutdown [tomcat-shutdown] Graceful shutdown complete
+2025-05-07 23:51:23,849 INFO o.s.o.j.AbstractEntityManagerFactoryBean [SpringApplicationShutdownHook] Closing JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07 23:51:23,966 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] BorrowServiceHikariPool - Shutdown initiated...
+2025-05-07 23:51:24,026 INFO c.z.h.HikariDataSource [SpringApplicationShutdownHook] BorrowServiceHikariPool - Shutdown completed.
+2025-05-07 23:51:33,310 INFO o.h.v.i.u.Version [background-preinit] HV000001: Hibernate Validator 8.0.2.Final
+2025-05-07 23:51:33,419 INFO o.s.b.StartupInfoLogger [main] Starting BorrowServiceApplication using Java 17.0.4.1 with PID 12272 (C:\Users\PRAJAPATI\Downloads\borrow-service\borrow-service\target\classes started by PRAJAPATI in C:\Users\PRAJAPATI\Downloads\borrow-service\borrow-service)
+2025-05-07 23:51:33,421 DEBUG o.s.b.StartupInfoLogger [main] Running with Spring Boot v3.4.5, Spring v6.2.6
+2025-05-07 23:51:33,423 INFO o.s.b.SpringApplication [main] The following 1 profile is active: "dev"
+2025-05-07 23:51:35,559 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2025-05-07 23:51:35,636 INFO o.s.d.r.c.RepositoryConfigurationDelegate [main] Finished Spring Data repository scanning in 66 ms. Found 4 JPA repository interfaces.
+2025-05-07 23:51:36,848 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat initialized with port 8082 (http)
+2025-05-07 23:51:36,862 INFO o.a.j.l.DirectJDKLog [main] Initializing ProtocolHandler ["http-nio-8082"]
+2025-05-07 23:51:36,866 INFO o.a.j.l.DirectJDKLog [main] Starting service [Tomcat]
+2025-05-07 23:51:36,866 INFO o.a.j.l.DirectJDKLog [main] Starting Servlet engine: [Apache Tomcat/10.1.40]
+2025-05-07 23:51:36,933 INFO o.a.j.l.DirectJDKLog [main] Initializing Spring embedded WebApplicationContext
+2025-05-07 23:51:36,934 INFO o.s.b.w.s.c.ServletWebServerApplicationContext [main] Root WebApplicationContext: initialization completed in 3398 ms
+2025-05-07 23:51:37,207 DEBUG c.b.b.c.RestTemplateConfig [main] Creating RestTemplate for User Service with timeout: 5000ms
+2025-05-07 23:51:37,463 DEBUG o.s.w.f.GenericFilterBean [main] Filter 'jwtAuthenticationFilter' configured for use
+2025-05-07 23:51:37,741 INFO c.z.h.HikariDataSource [main] BorrowServiceHikariPool - Starting...
+2025-05-07 23:51:38,154 INFO c.z.h.p.HikariPool [main] BorrowServiceHikariPool - Added connection org.postgresql.jdbc.PgConnection@2f498f21
+2025-05-07 23:51:38,156 INFO c.z.h.HikariDataSource [main] BorrowServiceHikariPool - Start completed.
+2025-05-07 23:51:38,207 INFO o.f.c.i.l.s.Slf4jLog [main] Database: jdbc:postgresql://localhost:5432/borrowdb (PostgreSQL 15.12)
+2025-05-07 23:51:38,422 INFO o.f.c.i.l.s.Slf4jLog [main] Successfully validated 2 migrations (execution time 00:00.107s)
+2025-05-07 23:51:38,493 INFO o.f.c.i.l.s.Slf4jLog [main] Current version of schema "public": 1
+2025-05-07 23:51:38,506 INFO o.f.c.i.l.s.Slf4jLog [main] Schema "public" is up to date. No migration necessary.
+2025-05-07 23:51:38,668 INFO o.h.j.i.u.LogHelper [main] HHH000204: Processing PersistenceUnitInfo [name: default]
+2025-05-07 23:51:38,759 INFO o.h.Version [main] HHH000412: Hibernate ORM core version 6.6.13.Final
+2025-05-07 23:51:38,817 INFO o.h.c.i.RegionFactoryInitiator [main] HHH000026: Second-level cache disabled
+2025-05-07 23:51:39,162 INFO o.s.o.j.p.SpringPersistenceUnitInfo [main] No LoadTimeWeaver setup: ignoring JPA class transformer
+2025-05-07 23:51:39,268 WARN o.h.e.j.d.i.DialectFactoryImpl [main] HHH90000025: PostgreSQLDialect does not need to be specified explicitly using 'hibernate.dialect' (remove the property setting and it will be selected by default)
+2025-05-07 23:51:39,303 INFO o.h.e.j.e.i.JdbcEnvironmentInitiator [main] HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (BorrowServiceHikariPool)']
+	Database driver: undefined/unknown
+	Database version: 15.12
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2025-05-07 23:51:40,899 INFO o.h.e.t.j.p.i.JtaPlatformInitiator [main] HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2025-05-07 23:51:43,002 INFO o.s.o.j.AbstractEntityManagerFactoryBean [main] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2025-05-07 23:51:43,490 INFO o.s.d.j.r.q.QueryEnhancerFactory [main] Hibernate is in classpath; If applicable, HQL parser will be used.
+2025-05-07 23:51:44,196 DEBUG c.b.b.c.RestTemplateConfig [main] Creating RestTemplate for Book Service with timeout: 5000ms
+2025-05-07 23:51:44,814 INFO o.s.s.c.a.a.c.InitializeUserDetailsBeanManagerConfigurer$InitializeUserDetailsManagerConfigurer [main] Global AuthenticationManager configured with UserDetailsService bean with name customUserDetailsService
+2025-05-07 23:51:46,019 INFO o.s.b.a.e.w.EndpointLinksResolver [main] Exposing 2 endpoints beneath base path '/actuator'
+2025-05-07 23:51:53,067 INFO o.a.k.c.c.AbstractConfig [main] AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:29092]
+	client.dns.lookup = use_all_dns_ips
+	client.id = borrow-service-admin-0
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metadata.recovery.strategy = none
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+
+2025-05-07 23:51:53,184 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka version: 3.8.1
+2025-05-07 23:51:53,185 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka commitId: 70d6ff42debf7e17
+2025-05-07 23:51:53,185 INFO o.a.k.c.u.AppInfoParser$AppInfo [main] Kafka startTimeMs: 1746642113182
+2025-05-07 23:51:53,877 INFO o.a.k.c.u.AppInfoParser [kafka-admin-client-thread | borrow-service-admin-0] App info kafka.admin.client for borrow-service-admin-0 unregistered
+2025-05-07 23:51:53,883 INFO o.a.k.c.m.Metrics [kafka-admin-client-thread | borrow-service-admin-0] Metrics scheduler closed
+2025-05-07 23:51:53,883 INFO o.a.k.c.m.Metrics [kafka-admin-client-thread | borrow-service-admin-0] Closing reporter org.apache.kafka.common.metrics.JmxReporter
+2025-05-07 23:51:53,883 INFO o.a.k.c.m.Metrics [kafka-admin-client-thread | borrow-service-admin-0] Metrics reporters closed
+2025-05-07 23:51:53,948 INFO o.a.j.l.DirectJDKLog [main] Starting ProtocolHandler ["http-nio-8082"]
+2025-05-07 23:51:53,968 INFO o.s.b.w.e.t.TomcatWebServer [main] Tomcat started on port 8082 (http) with context path '/api'
+2025-05-07 23:51:53,993 INFO o.s.b.StartupInfoLogger [main] Started BorrowServiceApplication in 21.538 seconds (process running for 23.616)
+2025-05-07 23:51:54,307 INFO o.a.j.l.DirectJDKLog [RMI TCP Connection(1)-192.168.1.9] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-07 23:51:54,309 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(1)-192.168.1.9] Initializing Servlet 'dispatcherServlet'
+2025-05-07 23:51:54,314 INFO o.s.w.s.FrameworkServlet [RMI TCP Connection(1)-192.168.1.9] Completed initialization in 5 ms
+2025-05-07 23:52:25,595 WARN c.z.h.p.HikariPool$HouseKeeper [BorrowServiceHikariPool housekeeper] BorrowServiceHikariPool - Thread starvation or clock leap detected (housekeeper delta=47s334ms649µs400ns).

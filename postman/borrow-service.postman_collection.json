@@ -1,0 +1,277 @@
+{
+	"info": {
+		"_postman_id": "a1b2c3d4-e5f6-7890-abcd-ef1234567890",
+		"name": "Borrow Service",
+		"description": "Collection for the Borrow Service API endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Borrows",
+			"item": [
+				{
+					"name": "List All Borrows",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/borrows?page=0&size=10",
+							"host": ["{{base_url}}"],
+							"path": ["api", "borrows"],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						},
+						"description": "Get a paginated list of all borrow records"
+					}
+				},
+				{
+					"name": "Get Borrow by ID",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/borrows/{{borrow_id}}",
+							"host": ["{{base_url}}"],
+							"path": ["api", "borrows", "{{borrow_id}}"]
+						},
+						"description": "Get details of a specific borrow record"
+					}
+				},
+				{
+					"name": "Create Borrow",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt_token}}",
+								"type": "text"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"bookId\": \"{{book_id}}\",\n    \"userId\": \"{{user_id}}\"\n}"
+						},
+						"url": {
+							"raw": "{{base_url}}/api/borrows",
+							"host": ["{{base_url}}"],
+							"path": ["api", "borrows"]
+						},
+						"description": "Create a new borrow record"
+					}
+				},
+				{
+					"name": "Return Book",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/borrows/{{borrow_id}}/return",
+							"host": ["{{base_url}}"],
+							"path": ["api", "borrows", "{{borrow_id}}", "return"]
+						},
+						"description": "Process a book return"
+					}
+				},
+				{
+					"name": "Get User Borrow History",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/borrows/user/{{user_id}}?page=0&size=10",
+							"host": ["{{base_url}}"],
+							"path": ["api", "borrows", "user", "{{user_id}}"],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						},
+						"description": "Get borrowing history for a specific user"
+					}
+				},
+				{
+					"name": "Get Book Borrow History",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/borrows/book/{{book_id}}?page=0&size=10",
+							"host": ["{{base_url}}"],
+							"path": ["api", "borrows", "book", "{{book_id}}"],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						},
+						"description": "Get borrowing history for a specific book"
+					}
+				},
+				{
+					"name": "List Overdue Borrows",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/borrows/overdue?page=0&size=10",
+							"host": ["{{base_url}}"],
+							"path": ["api", "borrows", "overdue"],
+							"query": [
+								{
+									"key": "page",
+									"value": "0"
+								},
+								{
+									"key": "size",
+									"value": "10"
+								}
+							]
+						},
+						"description": "Get a list of all overdue borrowings"
+					}
+				},
+				{
+					"name": "Extend Due Date",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt_token}}",
+								"type": "text"
+							}
+						],
+						"url": {
+							"raw": "{{base_url}}/api/borrows/{{borrow_id}}/extend",
+							"host": ["{{base_url}}"],
+							"path": ["api", "borrows", "{{borrow_id}}", "extend"]
+						},
+						"description": "Extend the due date for a borrow record"
+					}
+				}
+			]
+		},
+		{
+			"name": "Health",
+			"item": [
+				{
+					"name": "Health Check",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{base_url}}/api/health",
+							"host": ["{{base_url}}"],
+							"path": ["api", "health"]
+						},
+						"description": "Check the health status of the service"
+					}
+				}
+			]
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"exec": [""]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"exec": [""]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "base_url",
+			"value": "http://localhost:8082",
+			"type": "string"
+		},
+		{
+			"key": "jwt_token",
+			"value": "your-jwt-token-here",
+			"type": "string"
+		},
+		{
+			"key": "borrow_id",
+			"value": "borrow-id-here",
+			"type": "string"
+		},
+		{
+			"key": "book_id",
+			"value": "book-id-here",
+			"type": "string"
+		},
+		{
+			"key": "user_id",
+			"value": "user-id-here",
+			"type": "string"
+		}
+	]
+} 
