@@ -59,12 +59,16 @@ kubectl create namespace library-system
 
 3. Deploy PostgreSQL:
 ```bash
+kubectl apply -f k8s/postgres-pv.yaml
+kubectl apply -f k8s/postgres-pvc.yaml
 kubectl apply -f k8s/postgres-deployment.yaml
 kubectl apply -f k8s/postgres-service.yaml
 ```
 
 4. Deploy Kafka:
 ```bash
+kubectl apply -f k8s/kafka-pv.yaml
+kubectl apply -f k8s/kafka-pvc.yaml
 kubectl apply -f k8s/kafka-deployment.yaml
 kubectl apply -f k8s/kafka-service.yaml
 ```
