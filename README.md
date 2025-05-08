@@ -28,7 +28,7 @@ A microservice for managing book borrows in a Library Management System. This se
 
 1. Clone the repository:
 ```bash
-git clone <repository-url>
+git clone https://github.com/prajapati25/lms-borrow-service.git
 cd borrow-service
 ```
 
