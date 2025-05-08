@@ -205,10 +205,6 @@ docker build -t borrow-service:latest .
 4. Push to the branch
 5. Create a Pull Request
 
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
 ## Logging Configuration
 
 The service uses SLF4J with Logback for logging. Logs are written to both console and file.
