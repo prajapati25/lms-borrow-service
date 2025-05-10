@@ -10,6 +10,9 @@ import org.springframework.http.client.SimpleClientHttpRequestFactory;
 import org.springframework.stereotype.Component;
 import org.springframework.web.client.RestTemplate;
 
+import java.util.HashMap;
+import java.util.Map;
+
 @Component
 public class BookServiceClient {
     private static final Logger logger = LoggerFactory.getLogger(BookServiceClient.class);
@@ -54,7 +57,10 @@ public class BookServiceClient {
         logger.debug("Calling book service at URL: {}", url);
         
         try {
-            restTemplate.put(url, status);
+            Map<String, String> requestBody = new HashMap<>();
+            requestBody.put("status", status);
+
+            restTemplate.put(url, requestBody);
             logger.debug("Successfully updated book status for book ID {} to {}", bookId, status);
         } catch (Exception e) {
             logger.error("Error updating book status for book ID {}: {}", bookId, e.getMessage(), e);
